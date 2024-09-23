@@ -1,0 +1,9 @@
+{
+  "name": "ugo",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/ugo/src",
+  "projectType": "library",
+  "tags": ["scope:public", "type:util", "target:all"],
+  "// targets": "to see all targets run: nx show project ugo --web",
+  "targets": {}
+}
