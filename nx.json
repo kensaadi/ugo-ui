@@ -4,6 +4,14 @@
   "nxCloudId": "66f191e95ca8b56efbcd2b7b",
   "release": {
     "projects": ["packages/*", "apps/*"],
+    "version": {
+      "conventionalCommits": true
+    },
+    "changelog": {
+      "workspaceChangelog": {
+        "createRelease": "github"
+      }
+    },
     "releaseTagPattern": "release/{version}",
     "git": {
       "commitMessage": "chore(release): release {version}"
@@ -74,6 +82,12 @@
   "targetDefaults": {
     "e2e-ci--**/*": {
       "dependsOn": ["^build"]
+    },
+    "nx-release-publish": {
+      "dependsOn": ["^build"],
+      "options": {
+        "packageRoot": "dist/packages/{projectName}"
+      }
     }
   }
 }
