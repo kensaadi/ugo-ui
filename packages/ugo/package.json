@@ -1,6 +1,6 @@
 {
   "name": "@ugo-ui/ugo",
-  "version": "0.0.8",
+  "version": "0.0.5",
   "main": "./index.js",
   "types": "./index.d.ts",
   "exports": {
