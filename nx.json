@@ -11,11 +11,11 @@
       "workspaceChangelog": {
         "createRelease": "github"
       }
-    },
-    "releaseTagPattern": "release/{version}",
-    "git": {
-      "commitMessage": "chore(release): release {version}"
     }
+    // "releaseTagPattern": "release/{version}",
+    // "git": {
+    //   "commitMessage": "chore(release): release {version}"
+    // }
   },
   "namedInputs": {
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"],
@@ -82,12 +82,12 @@
   "targetDefaults": {
     "e2e-ci--**/*": {
       "dependsOn": ["^build"]
-    },
-    "nx-release-publish": {
-      "dependsOn": ["^build"],
-      "options": {
-        "packageRoot": "dist/packages/{projectName}"
-      }
     }
+    // "nx-release-publish": {
+    //   "dependsOn": ["^build"],
+    //   "options": {
+    //     "packageRoot": "dist/packages/{projectName}"
+    //   }
+    // }
   }
 }
