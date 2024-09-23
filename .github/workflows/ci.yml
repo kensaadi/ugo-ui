@@ -35,6 +35,8 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
       - uses: nrwl/nx-set-shas@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: pnpm exec nx-cloud record -- echo Hello World
